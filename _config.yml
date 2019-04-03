@@ -105,6 +105,43 @@ menu:
     icon: fas fa-user
     url: about/
 
+# Widget
+widgets:
+  - widgets: author 
+    avatar: 
+    social: true
+  - widgets: category
+  - widgets: list
+    icon: fas fa-link
+    title: 特别链接
+    rows: 
+      - name: 关于我 / 留言板
+        icon: fas fa-comment-dots
+        url: about/
+  - widgets: list
+    icon: fas fa-users
+    title: 友链
+    rows:
+      - name: reborn's blog
+        avatar: https://reb.mallotec.com/img/logo-Reborn.png
+        url: https://reb.mallotec.com/
+
+social:
+  - icon: fas fa-rss-square
+    url: atom.xml
+  - icon: fas fa-envelope
+    url: mailto:liangwenhao9@outlook.com
+  - icon: fas fa-github
+    url: https://github.com/HAo99
+  - icon: fas fa-steam
+    url: https://steamcommunity.com/id/HA990O/
+
+
+
+
+
+
+
 
 
 
