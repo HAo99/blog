@@ -1,6 +1,7 @@
 ---
 title: GreenDao 框架学习
 date: 2019-04-03 21:01:58
+categories: [Dev, Android]
 tags:
   - Green Dao
   - 教程
