@@ -114,7 +114,8 @@ widgets:
   - widget: plain
     title: 目前目标
     icon: fas fa-list
-    body: "- [ ] 完成Log项目<br>- [ ] 搭建teamspeak3服务"
+    body: "- [ ] 完成Log项目
+    - [ ] 搭建teamspeak3服务"
 
   - widget: category
   - widget: tagcloud
