@@ -1,14 +1,14 @@
 ---
-title: Git 探索
-categories: Git
-tag: 
+title: Git 学习
+date: 2019-04-03 21:01:58
+tags:
   - git
   - 教程
 ---
 
 ### 1. 什么是git
 
-
+Git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。
 
 ### 2. 安装git
 
@@ -16,9 +16,10 @@ tag:
 
 安装完成后，在开始菜单找到Git Bash或者直接在桌面Git Bash Here，进行设置用户名和密码
 
+```bash
 git config --global user.name "你的名字"
-
 git config --global user.email "你的邮箱" 
+```
 
 ### 3. 创建本地版本库（仓库）
 
@@ -250,4 +251,3 @@ $ git push origin master
 ```bash
 $ git push origin dev
 ```
-
