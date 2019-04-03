@@ -114,8 +114,8 @@ widgets:
   - widget: plain
     title: 目前目标
     icon: fas fa-list
-    body: "- [ ] 完成Log项目
-    - [ ] 搭建teamspeak3服务"
+    body: '- [ ] 完成LOG项目
+- [ ] 搭建ts3服务器'
 
   - widget: category
   - widget: tagcloud
@@ -133,6 +133,12 @@ widgets:
       - name: Reborn's blog
         avatar: https://reb.mallotec.com/img/logo-Reborn.png
         url: https://reb.mallotec.com/
+      - name: TinsFox's blog
+        avatar: https://note.tinsfox.com/images/avatar.jpg
+        url: https://note.tinsfox.com/
+      - name: Limbo's blog
+        avatar: https://limbowho.github.io/imgs/avatar.jpg
+        url: https://limbowho.github.io
   - widget: toc
 
 social:
@@ -158,7 +164,12 @@ valine:
   notify: false # valine mail notify (true/false)
   lang: zh-cn
 
-
+plugins:
+    hexo-generator-feed
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
 
 
 

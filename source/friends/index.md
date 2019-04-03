@@ -13,4 +13,23 @@ links:
       tags:     # 标签
       - 华广计协
       - 大佬
+    - name: TinsFox
+      avatar: https://note.tinsfox.com/images/avatar.jpg
+      url: https://note.tinsfox.com/
+      backgroundColor: '#00BCD4'
+      textColor: '#fff'
+      tags:
+      - 华广计协
+      - ADT部长
+      - 小程序开发
+    - name: Limbo
+      avatar: https://limbowho.github.io/imgs/avatar.jpg
+      url: https://limbowho.github.io
+      backgroundColor: '#FFCA28'
+      textColor: '#fff'
+      tags:
+      - 华广计协
+      - ADT部长
+      - 小程序开发
+
 ---
