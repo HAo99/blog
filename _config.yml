@@ -107,18 +107,18 @@ menu:
 
 # Widget
 widgets:
-  - widgets: author 
+  - widget: author 
     avatar: 
     social: true
-  - widgets: category
-  - widgets: list
+  - widget: category
+  - widget: list
     icon: fas fa-link
     title: 特别链接
     rows: 
       - name: 关于我 / 留言板
         icon: fas fa-comment-dots
         url: about/
-  - widgets: list
+  - widget: list
     icon: fas fa-users
     title: 友链
     rows:
