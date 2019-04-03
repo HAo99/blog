@@ -131,9 +131,9 @@ social:
     url: atom.xml
   - icon: fas fa-envelope
     url: mailto:liangwenhao9@outlook.com
-  - icon: fas fa-github
+  - icon: fab fa-github
     url: https://github.com/HAo99
-  - icon: fas fa-steam
+  - icon: fab fa-steam
     url: https://steamcommunity.com/id/HA990O/
 
 
