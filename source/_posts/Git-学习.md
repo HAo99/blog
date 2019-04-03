@@ -7,14 +7,11 @@ tags:
 ---
 
 ![git](Git-学习/git.jpg)
-git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。这篇文章将会教会你如何配置Git、如何将Git应用于团队开发当中去。
-<!-- more -->
-![git](Git-学习/git.jpg)
-### 1. 什么是git
-
+## 什么是git?
 Git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。
+<!-- more -->
 
-### 2. 安装git
+### 1. 安装git
 
 官网地址：https://git-scm.com/downloads
 
@@ -25,7 +22,7 @@ git config --global user.name "你的名字"
 git config --global user.email "你的邮箱" 
 ```
 
-### 3. 创建本地版本库（仓库）
+### 2. 创建本地版本库（仓库）
 
 什么是版本库呢？版本库就是仓库，可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，包括每个文件的修改、删除。
 
