@@ -93,7 +93,7 @@ greendao {
 }
 ```
 
-#### 创建储存对象实体类
+### 创建储存对象实体类
 
 使用GreenDao存储数据只需要在存储数据类前面声明@Enitity注解就能让GreenDao为其生成必要的代码
 
@@ -113,7 +113,7 @@ public class staff {
 }
 ```
 
-#### 相关注解说明：
+### 相关注解说明：
 
 - 实体@Entity注解
 
@@ -157,11 +157,11 @@ public class staff {
 
 后面的数据库操作需要借助这三个类进行，同时在我们的实体中自动生成了各个属性的get、set方法
 
-# 初始化GreenDao
+## 初始化GreenDao
 
 在Application中可以维持一个全局的会话。所以我们在Application进行数据库的初始化操作：
 
-## 1. 先建立一个Application的子类，重写onCreate()方法，加入初始化数据库的相关语句
+### 1. 先建立一个Application的子类，重写onCreate()方法，加入初始化数据库的相关语句
 
 ```java
 public class BaseApplication extends Application {
@@ -197,7 +197,7 @@ public class BaseApplication extends Application {
 }
 ```
 
-## 2. 新建完这个BaseApplication的类后，记得要在AndroidManifest.xml文件去注册一下
+### 2. 新建完这个BaseApplication的类后，记得要在AndroidManifest.xml文件去注册一下
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -226,9 +226,9 @@ public class BaseApplication extends Application {
 
 初始化完成之后rebuild一下项目，会发现设置的targetGenDir的目录生成三个类文件，这个是GreenDao自动生成的。说明数据库已经连接好了，我们接下来只需要进行数据库的增删改查操作就行咯。
 
-# 使用
+## 使用
 
-## 1. 增(Create)
+### 1. 增(Create)
 
 - **insert(Staff entity)** 插入数据
 
@@ -255,7 +255,7 @@ public void addStaff () {
 }
 ```
 
-## 2. 删(Delete)
+### 2. 删(Delete)
 
 - **deleteBykey(Long key)**  根据主键删除一条记录
 - **delete(Staff entity)** 根据实体类删除一条信息，一般结合查询方法，查询出一条记录后删除。
@@ -265,7 +265,7 @@ public void addStaff () {
 
 ```
 
-## 3. 改(Update)
+### 3. 改(Update)
 
 - **update(Staff entity)** 更新一条记录
 
@@ -279,7 +279,7 @@ public void updateStaff(Staff staff) {
 }
 ```
 
-## 4. 查(Retrieve)
+### 4. 查(Retrieve)
 
 - **loadAll()** 查询所有数据
 - **queryRaw()** 根据条件查询
@@ -302,4 +302,4 @@ public List queryData(String str) {
 }
 ```
 
-## QueryBuilder的使用方法
+### QueryBuilder的使用方法
