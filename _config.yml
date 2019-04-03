@@ -5,7 +5,7 @@
 # Site
 title: Tech House
 subtitle: 小灏的技术小屋
-favicon: 
+favicon: assets/image/blog-logo.jpeg
 description: 
 keywords:
 author: HAo99
@@ -109,9 +109,15 @@ menu:
 # Widget
 widgets:
   - widget: author 
-    avatar: 
+    avatar: assets/image/blog-logo.jpeg
     social: true
+  - widget: plain
+    title: 目前目标
+    icon: fas fa-list
+    body: "- [ ] 完成Log项目"
+
   - widget: category
+  - widget: tagcloud
   - widget: list
     icon: fas fa-link
     title: 特别链接
@@ -123,9 +129,10 @@ widgets:
     icon: fas fa-users
     title: 友链
     rows:
-      - name: reborn's blog
+      - name: Reborn's blog
         avatar: https://reb.mallotec.com/img/logo-Reborn.png
         url: https://reb.mallotec.com/
+  - widget: toc
 
 social:
   - icon: fas fa-rss-square
@@ -138,7 +145,17 @@ social:
     url: https://steamcommunity.com/id/HA990O/
 
 
-
+valine:
+  enable: true # 如果你想用Valine评论系统，请设置enable为true
+  app_id: ty5qfnr8gUjhIyv6hteCA7D3-gzGzoHsz # 必填
+  app_key: HjmYejugb1WqBcdKjX9eoxTv # 必填
+  guest_info: nick,mail,link #valine comment header info
+  placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
+  avatar: mp # gravatar style https://valine.js.org/avatar
+  pageSize: 10 # comment list page size
+  verify: false # valine verify code (true/false)
+  notify: false # valine mail notify (true/false)
+  lang: zh-cn
 
 
 
