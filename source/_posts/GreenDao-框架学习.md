@@ -6,6 +6,7 @@ tags:
   - 教程
   - Android
 ---
+![img](GreenDao-框架学习/GreenDao_01.png)
 GreenDao 是一个开源的 Android ORM (对象/关系映射)，通过 ORM，在我们数据库开发中节省了很多开发时间。这篇文章将会教会你如何配置目前最新版的 GreenDao 框架，且投入到开发工程中区。
 
 <!-- more -->
