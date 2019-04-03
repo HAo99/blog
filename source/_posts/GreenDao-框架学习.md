@@ -1,42 +1,40 @@
 ---
 title: GreenDao 框架学习
-date: 2019-04-03 20:49:17
+date: 2019-04-03 21:01:58
 tags:
   - Green Dao
   - 教程
   - Android
 ---
 
-# GreenDao 框架
+# 简介
 
-## 简介
-
-### GreenDao 是什么？
+## GreenDao 是什么？
 
 ![img](GreenDao-框架学习/GreenDao_01.png)
 
 GreenDao 是一个开源的Android ORM(对象/关系映射)，通过ORM，在我们数据库开发中节省了开发时间。这篇文章将会教会你如何配置目前最新版的 GreenDao 框架，且投入到开发工程中区。
 
 <!-- more -->
-### GreenDao 的官方文档
+## GreenDao 的官方文档
 
 - [官方网站](<http://greenrobot.org/greendao/>)
 - [官方使用文档](<http://greenrobot.org/greendao/documentation/>)
 - [GitHub地址](<https://github.com/greenrobot/greenDAO>)
 - [SQLChipher for Android 官方说明地址](<https://www.zetetic.net/sqlcipher/sqlcipher-for-android/>)
 
-### GreenDao的作用
+## GreenDao的作用
 
 通过GreenDao，我们可以快速的操作数据库，我们可以用简单的面向对象的API来储存、更新、删除和查询Java对象。
 
-### 目前主流的框架
+## 目前主流的框架
 
 - OrmLite
 - SugarORM
 - LitePal
 - GreenDao
 
-### 为什么选择GreenDao？
+## 为什么选择GreenDao？
 
 1. 高性能：官方声称是目前主流框架中运行效率最高的
 
@@ -45,13 +43,13 @@ GreenDao 是一个开源的Android ORM(对象/关系映射)，通过ORM，在我
 4. 使用便捷
 5. 支持数据库加密：SQLCipher，以确保用户数据安全
 
-## 配置
+# 配置
 
-### 导入相关插件
+## 导入相关插件
 
 要在Android项目中使用GreenDao，您需要添加GreenDao Gradle插件并添加GreenDao库：
 
-1. 导入插件
+### 1. 导入插件
 
 ```groovy
 // 在 Project 的 build.gradle 文件中添加
@@ -67,7 +65,7 @@ buildscript {
 }
 ```
 
-2. 配置相关依赖
+### 2. 配置相关依赖
 
 ```groovy
 // 在 Moudle:app 的 build.gradle 文件中添加
@@ -79,7 +77,7 @@ dependencies {
 }
 ```
 
-3. 配置数据库的相关信息
+### 3. 配置数据库的相关信息
 
    此处是可选项，不配置的话默认会生成在 build 目录下。
 
@@ -94,7 +92,7 @@ greendao {
 }
 ```
 
-### 创建储存对象实体类
+#### 创建储存对象实体类
 
 使用GreenDao存储数据只需要在存储数据类前面声明@Enitity注解就能让GreenDao为其生成必要的代码
 
@@ -158,11 +156,11 @@ public class staff {
 
 后面的数据库操作需要借助这三个类进行，同时在我们的实体中自动生成了各个属性的get、set方法
 
-### 初始化GreenDao
+# 初始化GreenDao
 
 在Application中可以维持一个全局的会话。所以我们在Application进行数据库的初始化操作：
 
-1. 先建立一个Application的子类，重写onCreate()方法，加入初始化数据库的相关语句
+## 1. 先建立一个Application的子类，重写onCreate()方法，加入初始化数据库的相关语句
 
 ```java
 public class BaseApplication extends Application {
@@ -198,7 +196,7 @@ public class BaseApplication extends Application {
 }
 ```
 
-2. 新建完这个BaseApplication的类后，记得要在AndroidManifest.xml文件去注册一下
+## 2. 新建完这个BaseApplication的类后，记得要在AndroidManifest.xml文件去注册一下
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -227,9 +225,9 @@ public class BaseApplication extends Application {
 
 初始化完成之后rebuild一下项目，会发现设置的targetGenDir的目录生成三个类文件，这个是GreenDao自动生成的。说明数据库已经连接好了，我们接下来只需要进行数据库的增删改查操作就行咯。
 
-## 使用
+# 使用
 
-### 1. 增(Create)
+## 1. 增(Create)
 
 - **insert(Staff entity)** 插入数据
 
@@ -256,7 +254,7 @@ public void addStaff () {
 }
 ```
 
-### 2. 删(Delete)
+## 2. 删(Delete)
 
 - **deleteBykey(Long key)**  根据主键删除一条记录
 - **delete(Staff entity)** 根据实体类删除一条信息，一般结合查询方法，查询出一条记录后删除。
@@ -266,7 +264,7 @@ public void addStaff () {
 
 ```
 
-### 3. 改(Update)
+## 3. 改(Update)
 
 - **update(Staff entity)** 更新一条记录
 
@@ -280,7 +278,7 @@ public void updateStaff(Staff staff) {
 }
 ```
 
-### 4. 查(Retrieve)
+## 4. 查(Retrieve)
 
 - **loadAll()** 查询所有数据
 - **queryRaw()** 根据条件查询
@@ -303,4 +301,4 @@ public List queryData(String str) {
 }
 ```
 
-#### QueryBuilder的使用方法
+## QueryBuilder的使用方法
