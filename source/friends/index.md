@@ -11,7 +11,7 @@ links:
       backgroundColor: '#3E74C9' # 卡片背景颜色
       textColor: '#fff'  # 卡片文字颜色
       tags:     # 标签
-      - 华广计协
+      - 计协
       - 大佬
     - name: TinsFox
       avatar: https://note.tinsfox.com/images/avatar.jpg
@@ -19,7 +19,7 @@ links:
       backgroundColor: '#00BCD4'
       textColor: '#fff'
       tags:
-      - 华广计协
+      - 计协
       - ADT部长
       - 小程序开发
     - name: Limbo
@@ -28,7 +28,7 @@ links:
       backgroundColor: '#FFCA28'
       textColor: '#fff'
       tags:
-      - 华广计协
+      - 计协
       - ADT部长
       - 小程序开发
 
