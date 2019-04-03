@@ -86,3 +86,28 @@ deploy:
   repo: git@47.106.188.10:/home/git/hexo.git
   branch: master
   message: update
+
+# Menu
+menu:
+  - name: 主页
+    icon: fas fa-home
+    url: /
+  - name: 类别
+    icon: fas fa-folder-open
+    url: categories/
+  - name: 归档
+    icon: fas fa-archive
+    url: archives
+  - name: 朋友
+    icon: fas fa-users
+    url: friends/
+  - name: 关于
+    icon: fas fa-user
+    url: about/
+
+
+
+
+
+
+      
