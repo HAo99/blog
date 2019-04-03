@@ -1,14 +1,11 @@
 ---
-title: GreenDao
-categories: Android
-tag: 
+title: GreenDao 框架学习
+date: 2019-04-03 20:49:17
+tags:
   - Green Dao
   - 教程
   - Android
 ---
-
-
-
 # GreenDao 框架
 
 ## 简介
@@ -17,7 +14,7 @@ tag:
 
 GreenDao 是一个开源的Android ORM(对象/关系映射)，通过ORM，在我们数据库开发中节省了开发时间。
 
-![img](../assets/image/GreenDao_01.png)
+![img](GreenDao-框架学习/GreenDao_01.png)
 
 ### GreenDao 的官方文档
 
@@ -305,4 +302,3 @@ public List queryData(String str) {
 ```
 
 #### QueryBuilder的使用方法
-
