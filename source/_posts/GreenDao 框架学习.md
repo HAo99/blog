@@ -17,7 +17,7 @@ tag:
 
 GreenDao 是一个开源的Android ORM(对象/关系映射)，通过ORM，在我们数据库开发中节省了开发时间。
 
-![img](/Users/lwh/Documents/blog/public/assets/image/GreenDao_01.png)
+![img](../assets/image/GreenDao_01.png)
 
 ### GreenDao 的官方文档
 
