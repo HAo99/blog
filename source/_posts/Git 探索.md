@@ -1,6 +1,6 @@
 ---
 title: Git 探索
-categories: git
+categories: Git
 tag: 
   - git
   - 教程

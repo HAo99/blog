@@ -114,8 +114,7 @@ widgets:
   - widget: plain
     title: 目前目标
     icon: fas fa-list
-    body: '- [ ] 完成LOG项目
-- [ ] 搭建ts3服务器'
+    body: '- [ ] 完成LOG项目 & 搭建ts3服务器'
 
   - widget: category
   - widget: tagcloud
