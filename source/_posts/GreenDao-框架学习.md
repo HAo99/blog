@@ -8,8 +8,6 @@ tags:
   - Android
 ---
 
-# 简介
-
 ## GreenDao 是什么？
 
 ![img](GreenDao-框架学习/GreenDao_01.png)
@@ -17,6 +15,8 @@ tags:
 GreenDao 是一个开源的Android ORM(对象/关系映射)，通过ORM，在我们数据库开发中节省了开发时间。这篇文章将会教会你如何配置目前最新版的 GreenDao 框架，且投入到开发工程中区。
 
 <!-- more -->
+# 相关资源
+
 ## GreenDao 的官方文档
 
 - [官方网站](<http://greenrobot.org/greendao/>)
@@ -93,7 +93,7 @@ greendao {
 }
 ```
 
-### 创建储存对象实体类
+### 4. 创建储存对象实体类
 
 使用GreenDao存储数据只需要在存储数据类前面声明@Enitity注解就能让GreenDao为其生成必要的代码
 
@@ -113,7 +113,7 @@ public class staff {
 }
 ```
 
-### 相关注解说明：
+### 5. 相关注解说明：
 
 - 实体@Entity注解
 
@@ -159,9 +159,11 @@ public class staff {
 
 ## 初始化GreenDao
 
-在Application中可以维持一个全局的会话。所以我们在Application进行数据库的初始化操作：
+安卓在Application中可以维持一个全局的会话，它的生命周期是从app开启到终止。我们希望数据库在应用打开的时候就被初始化，所以我们在Application进行数据库的初始化操作。
 
-### 1. 先建立一个Application的子类，重写onCreate()方法，加入初始化数据库的相关语句
+### 1. 重写Application类
+
+先建立一个Application的子类，这里我写了一个BaseApplication的类，并继承了Application类，且重写了onCreate()方法，在里面添加了初始化数据库的相关语句。
 
 ```java
 public class BaseApplication extends Application {
@@ -181,23 +183,31 @@ public class BaseApplication extends Application {
   	 * 初始化数据库
   	 */
   	public void initGreenDaoDatabase() {
-      	//创建数据库 People.db
+      	//1. 创建数据库 People.db
   			helper = new DaoMaster.DevOpenHelper(this, "People.db");
-      	//获取可写数据库
+      	//2. 获取可写数据库
   			db = helper.getWritableDatabase();
-      	//获取数据库对象
+      	//3. 获取数据库对象
   			daoMaster = new DaoMaster(db);
-      	//获取dao对象管理者
+      	//4. 获取dao对象管理者
   			daoSession = daoMaster.newSession();
   	}
   
-  	public static DaoSession getDaoSession() {
+    /**
+     * 获取数据库的dao对象管理者
+     * @return dao对象管理者
+     */
+  	public DaoSession getDaoSession() {
  			 	return daoSession;
 		}
 }
 ```
 
-### 2. 新建完这个BaseApplication的类后，记得要在AndroidManifest.xml文件去注册一下
+可以看见在上面的代码中，我还写了一个getDaoSession()的方法，是用于获取daoSession这个对象管理者，在后面对数据库操作有重要作用
+
+### 2. 注册新的Application
+
+新建完这个BaseApplication的类后，记得要在AndroidManifest.xml文件去注册一下，只要加一下下面标注的那一行代码即可
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -224,7 +234,7 @@ public class BaseApplication extends Application {
 </manifest>
 ```
 
-初始化完成之后rebuild一下项目，会发现设置的targetGenDir的目录生成三个类文件，这个是GreenDao自动生成的。说明数据库已经连接好了，我们接下来只需要进行数据库的增删改查操作就行咯。
+初始化完成之后记得build一下项目，会发现设置的targetGenDir([前面配置数据库中设置的](3. 配置数据库的相关信息))的目录下生成三个类文件，这个是GreenDao自动生成的。说明数据库已经连接好了，我们接下来只需要进行数据库的增删改查操作就行咯。
 
 ## 使用
 
