@@ -34,9 +34,9 @@ git config --global user.email "你的邮箱"
  首先，到一个你想要新建仓库的地方，右键使用Git Bash Here，使用如下指令
 
 ```bash
-$ mkdir MyProject (这个命令是make directory的意思，创建一个名为MyProject的文件夹) 
-$ cd MyProject 	  (这个命令是change directory的意思，进入到名为MyProject的文件夹)
-$ pwd 			  (这个命令是print working directory的意思，打印输出目前所在的目录)
+$ mkdir MyProject #这个命令是make directory的意思，创建一个名为MyProject的文件夹) 
+$ cd MyProject 	  #这个命令是change directory的意思，进入到名为MyProject的文件夹)
+$ pwd 			    #这个命令是print working directory的意思，打印输出目前所在的目录)
 ```
 
 虽然你们也可以直接在资源管理器里直接右键新建文件夹然后进到里面再右键git bash here，这样也可以让bash进到这个目录里，但是讲解命令行的方法可以让你们快速认识到liunx的一些基础命令。常见的文件操作命令还有下面这些，有兴趣的可以之后了解。
