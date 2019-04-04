@@ -240,6 +240,8 @@ public class BaseApplication extends Application {
 
 ## 使用
 
+## CRUD 基础操作
+
 ### 1.增(Create)
 
 - **insert(Staff entity)** 插入数据
@@ -313,5 +315,7 @@ public List queryData(String str) {
   	return staffs;
 }
 ```
+
+## QueryBuilder 详解
 
 ### QueryBuilder的使用方法
