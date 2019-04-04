@@ -78,7 +78,7 @@ dependencies {
 }
 ```
 
-### 3. 配置数据库的相关信息
+### <a name="to3"></a>3. 配置数据库的相关信息</p>
 
    此处是可选项，不配置的话默认会生成在 build 目录下。
 
@@ -234,7 +234,7 @@ public class BaseApplication extends Application {
 </manifest>
 ```
 
-初始化完成之后记得build一下项目，会发现设置的targetGenDir(<a href="#3. 配置数据库的相关信息">前面配置数据库的目录</a>))的目录下生成三个类文件，这个是GreenDao自动生成的。说明数据库已经连接好了，我们接下来只需要进行数据库的增删改查操作就行咯。
+初始化完成之后记得build一下项目，会发现设置的targetGenDir(<a href="#to3">前面配置数据库的目录</a>))的目录下生成三个类文件，这个是GreenDao自动生成的。说明数据库已经连接好了，我们接下来只需要进行数据库的增删改查操作就行咯。
 
 ## 使用
 
