@@ -228,7 +228,7 @@ public class BaseApplication extends Application {
 
 ## 使用
 
-### 增(Create)
+### 1.增(Create)
 
 - **insert(Staff entity)** 插入数据
 
@@ -255,7 +255,7 @@ public void addStaff () {
 }
 ```
 
-### 删(Delete)
+### 2. 删(Delete)
 
 - **deleteBykey(Long key)**  根据主键删除一条记录
 - **delete(Staff entity)** 根据实体类删除一条信息，一般结合查询方法，查询出一条记录后删除。
@@ -279,7 +279,7 @@ public void updateStaff(Staff staff) {
 }
 ```
 
-### 查(Retrieve)
+### 4. 查(Retrieve)
 
 - **loadAll()** 查询所有数据
 - **queryRaw()** 根据条件查询
