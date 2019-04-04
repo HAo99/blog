@@ -15,6 +15,7 @@ tags:
 GreenDao 是一个开源的Android ORM(对象/关系映射)，通过ORM，在我们数据库开发中节省了开发时间。这篇文章将会教会你如何配置目前最新版的 GreenDao 框架，且投入到开发工程中区。
 
 <!-- more -->
+
 # 相关资源
 
 ## GreenDao 的官方文档
@@ -170,15 +171,15 @@ public class staff {
 ```java
 public class BaseApplication extends Application {
   	
-  	private static DaoSession daoSession;
-		private DaoMaster daoMaster;
-		private DaoMaster.DevOpenHelper helper;
-		private SQLiteDatabase db;
+  	private DaoSession daoSession;
+	private DaoMaster daoMaster;
+	private DaoMaster.DevOpenHelper helper;
+	private SQLiteDatabase db;
   
   	@Override
   	public void onCreate(){
-  		  super.onCreate();
-   			//调用初始化数据库方法
+  		super.onCreate();
+   		//调用初始化数据库方法
       	initGreenDaoDatabase();
   	}
   	/**
@@ -186,13 +187,13 @@ public class BaseApplication extends Application {
   	 */
   	public void initGreenDaoDatabase() {
       	//1. 创建数据库 People.db
-  			helper = new DaoMaster.DevOpenHelper(this, "People.db");
+  		helper = new DaoMaster.DevOpenHelper(this, "People.db");
       	//2. 获取可写数据库
-  			db = helper.getWritableDatabase();
+  		db = helper.getWritableDatabase();
       	//3. 获取数据库对象
-  			daoMaster = new DaoMaster(db);
+  		daoMaster = new DaoMaster(db);
       	//4. 获取dao对象管理者
-  			daoSession = daoMaster.newSession();
+  		daoSession = daoMaster.newSession();
   	}
   
     /**
@@ -200,8 +201,8 @@ public class BaseApplication extends Application {
      * @return dao对象管理者
      */
   	public DaoSession getDaoSession() {
- 			 	return daoSession;
-		}
+ 		return daoSession;
+	}
 }
 ```
 
@@ -265,7 +266,7 @@ public void addStaff () {
   	staff.setStaffNo(1);
   	
   	staffDao.insert(staff);						//插入数据
-  	//staffDao.insertOrReplase(staff);  数据存在则替换，数据不存在则插入
+  	//staffDao.insertOrReplase(staff);          //数据存在则替换，数据不存在则插入
 }
 ```
 
@@ -319,3 +320,4 @@ public List queryData(String str) {
 ## QueryBuilder 详解
 
 ### QueryBuilder的使用方法
+*未完待续*

@@ -17,7 +17,6 @@ meta:
 当然也可以叫我小灏(hào)。广东广州人，目前正向自己的目标前进。
 
 - 在读大一新生，校内计算机协会成员
-
 - 对一切有关于计算机知识有浓厚兴趣
 - 图像处理，视频后期，编程开发均有涉猎
 - 目标是全栈，目前主攻Java后端及安卓应用开发方向。
@@ -38,7 +37,6 @@ meta:
 
 - E-Mail：liangwenhao9@outlook.com
 - GitHub：https://github.com/HAo99
-
 - Steam：https://steamcommunity.com/id/HA990O/
 
 > 因为 steam 上有很多假装来买库存的骗子，默认是不同意任何人添加好友的，如果想加我steam来一起玩游戏，可以先在 steam 个人主页下先给我留个言。有任何想法可以发在这个评论区里，或者你也可以发邮件。
