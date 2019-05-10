@@ -3,8 +3,8 @@ title: Android 学习之路 - (0)开坑篇
 date: 2019-05-11 00:30:28
 tags:
 ---
-![Banner_0](/Users/lwh/Documents/blog/source/_posts/Android-学习之路-0-开坑篇/Banner_0.png)
-
+![Banner_0](/Android-学习之路-0-开坑篇/Banner_0.png)
+<!-- more -->
 ---
 
 *以上为前言*
@@ -51,5 +51,5 @@ tags:
 
 # 教程大纲
 
-*![Android_Study_Route](/Users/lwh/Documents/blog/source/_posts/Android-学习之路-0-开坑篇/Android_Study_Route.png)(本章完结)*
+*![Android_Study_Route](/Android-学习之路-0-开坑篇/Android_Study_Route.png)(本章完结)*
 
