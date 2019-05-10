@@ -1,7 +1,11 @@
 ---
 title: Android 学习之路 - (0)开坑篇
 date: 2019-05-11 00:30:28
+categories: [Dev, Android]
 tags:
+	- Android
+	- 学习之路
+	- 教程
 ---
 ![Banner_0](/Android-学习之路-0-开坑篇/Banner_0.png)
 <!-- more -->
