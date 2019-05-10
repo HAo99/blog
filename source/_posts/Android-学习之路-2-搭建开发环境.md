@@ -9,7 +9,7 @@ tags:
 ---
 
 ![Banner_2](/Android-学习之路-2-搭建开发环境/Banner_2.png)
-
+<!-- more -->
 ---
 
 以上是前言
