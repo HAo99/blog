@@ -1,7 +1,11 @@
 ---
 title: Android 学习之路 - (1)什么是安卓
 date: 2019-05-11 00:44:00
+categories: [Dev, Android]
 tags:
+	- Android
+	- 学习之路
+	- 教程
 ---
 ![Banner_1](/Android-学习之路-1-什么是安卓/Banner_1.png)
 <!-- more -->
