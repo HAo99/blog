@@ -2,7 +2,7 @@
 layout: links     # 必须
 title: 我的朋友们   # 可选，这是友链页的标题
 links:
-  - group: ADT
+  - group: WEAC
     icon: fas fa-user-tie
     items:
     - name: Limbo
