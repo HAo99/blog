@@ -12,7 +12,15 @@ links:
       textColor: '#fff'
       tags:
       - 计协
-      - ADT部长
+      - 计协会长（ADT 直属）
       - 小程序开发
+    - name: ChaoHui
+      avatar: /assets/image/ChaoHui.jpg
+      url: http://www.bswaterb.club
+      backgroundColor: '#33FFD0'
+      textColor: '#fff'
+      tags:
+      - 计协
+      - 维护部长
 
 ---
