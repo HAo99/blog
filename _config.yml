@@ -164,10 +164,6 @@ feed:
     path: atom.xml
     limit: 20
 
-
-
-
-
-
-
-      
+# import:
+#   link:
+#     "<link rel="stylesheet" href="assets/image/css/background.css">"
