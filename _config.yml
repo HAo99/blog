@@ -18,7 +18,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.hao99.club
+url: https://blog.hao99.club
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -114,7 +114,7 @@ widgets:
   - widget: plain
     title: 目前目标
     icon: fas fa-list
-    body: '- [ ] 完成LOG项目 & 搭建ts3服务器'
+    body: ''
 
   - widget: category
   - widget: tagcloud
@@ -170,7 +170,7 @@ feed:
     path: atom.xml
     limit: 20
 
-
+footer: '粤ICP备19036161号-1'
 
 
 
