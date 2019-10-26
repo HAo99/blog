@@ -153,8 +153,9 @@ social:
 
 valine:
   enable: true # 如果你想用Valine评论系统，请设置enable为true
-  app_id: ty5qfnr8gUjhIyv6hteCA7D3-gzGzoHsz # 必填
-  app_key: HjmYejugb1WqBcdKjX9eoxTv # 必填
+  leancloud:
+    app_id: ty5qfnr8gUjhIyv6hteCA7D3-gzGzoHsz # 必填
+    app_key: HjmYejugb1WqBcdKjX9eoxTv # 必填
   guest_info: nick,mail,link #valine comment header info
   placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
   avatar: mp # gravatar style https://valine.js.org/avatar
@@ -170,7 +171,7 @@ feed:
     path: atom.xml
     limit: 20
 
-footer: '粤ICP备19036161号-1'
+
 
 
 
