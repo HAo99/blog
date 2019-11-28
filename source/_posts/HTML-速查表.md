@@ -6,8 +6,6 @@ tags:
     - HTML
 ---
 <!-- more -->
-# HTML 速查
-
 ## 文本
 
 ```html
