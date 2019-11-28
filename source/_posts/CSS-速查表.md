@@ -10,13 +10,31 @@ tags:
 
 ## 插入样式表
 
-- 外部样式表
-- 内部样式表
-- 内联样式表
+### 外部样式表
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+### 内部样式表
+
+```html
+<style>
+  div {
+    color: red;
+  }
+</style>
+```
+
+### 内联样式表
+
+```html
+<div style="color=red"></div>
+```
+
+
 
 ## Selector（选择器）
-
-## 选择器
 
 ### 四种基本选择器
 
