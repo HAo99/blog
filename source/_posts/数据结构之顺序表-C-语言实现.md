@@ -30,7 +30,7 @@ typedef struct {
 int add(SQList *sqlist, dataType e, int index);		// 增加结点到指定索引
 int get(SQList *sqlist, dataType *e, int index); 	// 获取指定索引处的结点元素的值
 int set(SQList *sqlist, dataType e, int index);		// 设置指定索引处的结点元素的值
-int remove(SQList *sqlist, int index);						// 删除指定位置的结点
+int remove(SQList *sqlist, int index);				// 删除指定位置的结点
 ```
 
 基本上就是增删改查。

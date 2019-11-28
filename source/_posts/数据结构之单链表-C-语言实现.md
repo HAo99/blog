@@ -24,12 +24,12 @@ typedef Pointer LKList;
 先来看看我们要实现的一些基本方法
 
 ```c
-LKList initList();																	// 初始化链表
-int getSize(LKList head);														// 求表长
-int add(LKList head, dataType e, int index);				// 在指定索引处插入结点元素
+LKList initList();                                  // 初始化链表
+int getSize(LKList head);	                        // 求表长
+int add(LKList head, dataType e, int index);        // 在指定索引处插入结点元素
 int get(LKList head, dataType *result, int index);	// 获取指定位置索引元素
-int set(LKList head, dataType e, int index);				// 设置指定位置索引元素
-int remove(LKList head, int index);									// 删除指定索引的结点元素
+int set(LKList head, dataType e, int index);		// 设置指定位置索引元素
+int remove(LKList head, int index);					// 删除指定索引的结点元素
 ```
 
 在本文中，单链表使用的是头插法来进行实现的，且使用了一个假的头结 (dummyHead) 点来简化代码实现，即 dummyHead 的下一个结点才为首结点。
