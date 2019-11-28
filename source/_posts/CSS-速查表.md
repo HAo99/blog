@@ -102,7 +102,7 @@ p:first-line {
 
 ## Background（背景）
 
-- background-color (背景颜色)
+### background-color (背景颜色)
 
 | 值                 | 描述                               |
 | ------------------ | ---------------------------------- |
@@ -112,7 +112,7 @@ p:first-line {
 | transparent        | 默认；背景颜色为透明               |
 | inherit            | 从父元素继承 background-color 的值 |
 
-- background-image (背景图片)
+### background-image (背景图片)
 
 | 值       | 描述                               |
 | -------- | ---------------------------------- |
@@ -120,7 +120,7 @@ p:first-line {
 | none     | 默认值；不显示背景图像             |
 | inherit  | 从父元素继承 background-image 的值 |
 
-- background-repeat (是否重复)
+### background-repeat (是否重复)
 
 | 值        | 描述                                     |
 | --------- | ---------------------------------------- |
@@ -130,23 +130,24 @@ p:first-line {
 | no-repeat | 背景图像不重复，仅显示一次               |
 | inherit   | 从父元素继承 background-repeat 的值      |
 
-- background-position (背景位置)
+### background-position (背景位置)
 
-  - 关键字
-    - center
-    - top
-    - bottom
-    - right
-    - left
-    - 可组合，如：top right
-  - 百分比
-    - 0% 0%    位于左上角
-    - 50% 50%    位于中心
-    - 100% 100%    位于右下角
-  - 长度值
-    - 0px 0px 位于左上角
-    - 50px 50px 位于内边距偏移50像素
-- background-attachment (背景依附)
+- 关键字
+  - center
+  - top
+  - bottom
+  - right
+  - left
+  - 可组合，如：top right
+- 百分比
+  - 0% 0%    位于左上角
+  - 50% 50%    位于中心
+  - 100% 100%    位于右下角
+- 长度值
+  - 0px 0px 位于左上角
+  - 50px 50px 位于内边距偏移50像素
+
+### background-attachment (背景依附)
 
 | 值      | 描述                                           |
 | ------- | ---------------------------------------------- |
@@ -154,7 +155,7 @@ p:first-line {
 | fixed   | 当页面到其余部分滚动时，背景图片不会移动       |
 | inherit | 从父元素继承 background-attachment 的值        |
 
-- background (简写形式)
+### background (简写形式)
 
 ```css
 background: #00ff00 url(image.png) no-repeat fixed top;
@@ -164,7 +165,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 
 ## Text（文本）
 
-- color (文本颜色)
+### color (文本颜色)
 
 | 值    | 描述                           |
 | ----- | ------------------------------ |
@@ -173,7 +174,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | rgb(255, 255, 255) | 规定颜色值为 rgb 代码的背景颜色    |
 | inherit | 从父元素继承 color 的值 |
 
-- text-align (文本对齐方式)
+### text-align (文本对齐方式)
 
 | 值      | 描述                         |
 | ------- | ---------------------------- |
@@ -183,7 +184,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | justify | 文本两端对齐                 |
 | inherit | 从父元素继承 text-align 的值 |
 
-- text-decoration (文本修饰)
+### text-decoration (文本修饰)
 
 | 值           | 描述                              |
 | ------------ | --------------------------------- |
@@ -194,7 +195,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | blink        | 定义闪烁的文本                    |
 | inherit      | 从父元素继承 text-decoration 的值 |
 
-- text-transform (文本转换)
+### text-transform (文本转换)
 
 | 值         | 描述                                       |
 | ---------- | ------------------------------------------ |
@@ -204,7 +205,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | lowercase  | 全部转换为小写字母                         |
 | inherit    | 从父元素继承 text-transform 的值           |
 
-- text-indent (文本缩进)
+### text-indent (文本缩进)
 
 | 值                  | 描述                                          |
 | ------------------- | --------------------------------------------- |
@@ -212,7 +213,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | 20%                 | 使用基于父元素宽度百分比定义缩进长度(例：5px) |
 | inherit             | 从父元素继承 text-indent 的值                 |
 
-- word-spacing (单词/字间隔)
+### word-spacing (单词/字间隔)
 
 | 值      | 描述                           |
 | ------- | ------------------------------ |
@@ -220,7 +221,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | 50px    | 定义单词间的固定单位间距       |
 | inherit | 从父元素继承 word-spacing 的值 |
 
-- letter-spacing (设置字符间距)
+### letter-spacing (设置字符间距)
 
 | 值                 | 描述                                 |
 | ------------------ | ------------------------------------ |
@@ -228,7 +229,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | *length* (例：2px) | 定义字符间的固定空间（允许使用负值） |
 | inherit            | 从父元素继承 letter-spacing 的值     |
 
-- line-height (设置行高)
+### line-height (设置行高)
 
 | 值                 | 描述                                               |
 | ------------------ | -------------------------------------------------- |
@@ -242,7 +243,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 
 ## Fonts（字体）
 
-- font-style (字体样式)
+### font-style (字体样式)
 
 | 值      | 描述                                 |
 | ------- | ------------------------------------ |
@@ -251,7 +252,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | oblique | 浏览器会显示一个倾斜的字体样式       |
 | inherit | 从父元素继承字体样式                 |
 
-- font-size (字体大小)
+### font-size (字体大小)
 
 | 值                 | 描述                           |
 | ------------------ | ------------------------------ |
@@ -268,14 +269,14 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | %                  | 设置为基于父元素的一个百分比值 |
 | inherit            | 从父元素继承字体尺寸           |
 
-- font-family (字体)
+### font-family (字体)
 
 | 值      | 描述             |
 | ------- | ---------------- |
 | 字体名  | 字体名           |
 | inherit | 从父元素继承字体 |
 
-- font-variant (是否以小型大写字母的字体显示文本)
+### font-variant (是否以小型大写字母的字体显示文本)
 
 | 值         | 描述                               |
 | ---------- | ---------------------------------- |
@@ -283,7 +284,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | small-caps | 浏览器会显示小型大写字母字体       |
 | inherit    | 从父元素继承 font-variant 的值     |
 
-- font-weight (字体粗细)
+### font-weight (字体粗细)
 
 | 值      | 描述                   |
 | ------- | ---------------------- |
@@ -298,7 +299,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 
 ## List（列表）
 
-- list-style-image (图片标记)
+### list-style-image (图片标记)
 
 | 值      | 描述                               |
 | ------- | ---------------------------------- |
@@ -306,7 +307,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | none    | 默认值；无图像被显示               |
 | inherit | 从父元素继承 list-style-image 的值 |
 
-- list-style-position (标记位置)
+### list-style-position (标记位置)
 
 | 值      | 描述                                                         |
 | ------- | ------------------------------------------------------------ |
@@ -314,7 +315,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | outside | 默认值；保持标记位于文本的左侧；列表项目标记放置在文本以外，且环绕文本不根据标记对齐 |
 | inherit | 从父元素继承 list-style-position 的值                        |
 
-- list-style-type (列表标记)
+### list-style-type (列表标记)
 
 | 值                   | 描述                   |
 | -------------------- | ---------------------- |
@@ -333,7 +334,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 
 ## Border（边框）
 
-- border-style (边框样式)
+### border-style (边框样式)
 
 | 值      | 描述                               |
 | ------- | ---------------------------------- |
@@ -349,7 +350,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | outset  | 3D outset 边框                     |
 | inherit | 从父元素继承边框样式               |
 
-- border-width (边框宽度)
+### border-width (边框宽度)
 
 
 | 值                 | 描述                           |
@@ -360,7 +361,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | *length* (例：5px) | 自定义边框的宽度               |
 | inherit            | 从父元素继承 border-width 的值 |
 
-- border-color (边框颜色)
+### border-color (边框颜色)
 
 | 值                 | 描述                           |
 | ------------------ | ------------------------------ |
@@ -372,15 +373,15 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 
 ## Outline（轮廓）
 
-- outline-color (轮廓颜色)
+### outline-color (轮廓颜色)
 
 (可选值同 border-color)
 
-- outline-style (轮廓样式)
+### outline-style (轮廓样式)
 
 (可选值同 border-style)
 
-- outline-width (轮廓宽度)
+### outline-width (轮廓宽度)
 
 (可选值同 border-width)
 
@@ -388,14 +389,15 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 
 ## Margin（外边距）和 Padding（内边距）
 
-- margin (外边距)
+### margin (外边距)
 
 - margin-bottom
 - margin-left
 - margin-right
 - margin-top
 
-- padding (内边距)
+### padding (内边距)
+
 - padding-bottom
 - padding-left
 - padding-right
@@ -409,8 +411,6 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | inherit             | 从父元素继承属性的值             |
 
 ## Display（显示）
-
-- display (显示方式)
 
 | 值                 | 描述                                                         |
 | ------------------ | ------------------------------------------------------------ |
@@ -436,8 +436,6 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 
 ## Visibility（可见性）
 
-- visibility (可见性)
-
 | 值       | 描述                                                         |
 | :------- | ------------------------------------------------------------ |
 | visible  | 默认值；元素是不可见的                                       |
@@ -448,8 +446,6 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 
 
 ## Position（定位）
-
-- position (定位方式)
 
 | 值       | 描述                                                         |
 | -------- | ------------------------------------------------------------ |
@@ -463,7 +459,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 
 ## Float（浮动）
 
-- float (浮动方向)
+### float (浮动方向)
 
 | 值      | 描述                    |
 | ------- | ----------------------- |
@@ -472,7 +468,7 @@ background: #00ff00 url(image.png) no-repeat fixed top;
 | none    | 默认值；元素不浮动      |
 | inherit | 从父元素继承 float 的值 |
 
-- clear (清除浮动)
+### clear (清除浮动)
 
 | 值      | 描述                           |
 | ------- | ------------------------------ |
