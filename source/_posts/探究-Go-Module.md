@@ -78,6 +78,7 @@ export GO111MODULE=auto
 # 配置 GOPROXY 环境变量
 export GOPROXY=https://goproxy.io
 # 建议使用下面这个代理节点 Updated in 2020/02/11
+export GOPROXY=https://goproxy.cn
 ```
 
 或者你也可以像本文上面设置 GO111MODULE 环境变量一样，添加在它的后面，当然记得要 source 一下。
