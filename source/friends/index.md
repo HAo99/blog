@@ -22,5 +22,12 @@ links:
       tags:
       - 计协
       - 维护部长
+    - name: 7gugu
+      avatar: https://www.7gugu.com/wp-content/uploads/2019/01/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20181012202858-150x150.jpg
+      url: https://www.7gugu.com
+      backgroundColor: '#FBC02D'
+      textColor: '#fff'
+      tags:
+      - dalao
 
 ---
